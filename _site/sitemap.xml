@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/indigo-jekyll-theme/</loc>
-<lastmod>2016-01-23T22:10:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/markdown-common-elements/</loc>
-<lastmod>2016-02-24T22:44:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/markdown-extra-components/</loc>
-<lastmod>2016-02-24T22:48:00+02:00</lastmod>
+<loc>http://localhost:4000/devlytics/</loc>
+<lastmod>2019-03-27T00:00:00+02:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/about/</loc>
@@ -26,5 +18,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/tags/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/small.cv.pdf</loc>
+<lastmod>2019-03-27T15:49:39+02:00</lastmod>
 </url>
 </urlset>
