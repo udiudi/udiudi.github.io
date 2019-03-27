@@ -3,14 +3,14 @@ name: Udi
 bio: A developer
 
 # twitter summary info
-description: A blog about technology and stuff related
+description: Udi's Place
 
 # if it's an external image, update below for true
 # better with square images
 external-image: false
 picture: profile.jpg
 
-url: https://udiudi.github.io
+url: https://udi.codes
 # your url: http://USERNAME.github.io
 
 permalink: /:title/
@@ -49,6 +49,7 @@ authors:
         external-image: false
         picture: profile.jpg
         twitter: udiudi
+        github: udiudi
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
