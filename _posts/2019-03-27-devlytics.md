@@ -8,4 +8,4 @@ A web application that provides insights into your Git repository, to understand
 
 If you are interested to give it a try, signup for a beta access [here](https://devlytics.io).
 
-![DevLytics Dashboard](/assets/images/posts/devlytics.png)
+![DevLytics Dashboard](/devlytics2.png?v=1)
