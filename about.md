@@ -13,4 +13,4 @@ Throughout my career I've worked with local and remote teams, lead the technolog
 
 I'm well versed in several tech-stacks, faced big technological and people challenges, passionate for efficiency, team-scaling and building a great product.
 
-**I'm looking for new opportunities** in a form of contract work, being hired by a great company, or creating one from scratch.
+**I'm always available to hear about new opportunities** in a form of contract work, software development or consultant CTO.
