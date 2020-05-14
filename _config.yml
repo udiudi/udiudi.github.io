@@ -8,7 +8,7 @@ description: Udi's Place
 # if it's an external image, update below for true
 # better with square images
 external-image: false
-picture: profile.jpg
+# picture: profile.jpg
 
 url: https://udi.codes
 # your url: http://USERNAME.github.io
@@ -40,14 +40,14 @@ github: udiudi
 # reddit: username
 # medium: medium
 # vimeo: myvimeo
-# email: myemail@gmail.com
+email: udi@udi.codes
 
 authors:
-    johndoe:
+    udi:
         name: Udi
         bio: A developer
         external-image: false
-        picture: profile.jpg
+        picture: false
         twitter: udiudi
         github: udiudi
 
