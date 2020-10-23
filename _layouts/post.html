@@ -23,6 +23,10 @@ layout: page
 
 {{content}}
 
+{% if page.img %}
+    <img class="" src="{{ page.img }}" alt="{{ page.title }}" title="{{ page.title }}" />
+{% endif %}
+
 {% if page.blog and site.blog-nav-links %}
     <div class="blog-navigation">
         {% if page.previous.url %}

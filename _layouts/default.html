@@ -24,10 +24,11 @@ layout: compress
     {{ scss_sheet | scssify }}
     </style>
 
+
 </head>
 <body>
 
-    <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
+    <div class="container wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
         {% if page.tag %}
             <div class="post">
         {% else %}
