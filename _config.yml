@@ -91,17 +91,6 @@ sass:
 
 plugins:
   - jemoji
-  - jekyll-mentions
-  - jekyll-seo-tag
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-paginate
-  - jekyll-admin
-  - jekyll-titles-from-headings
-  - jekyll-archives
-  - jekyll-sitemap
-  - jekyll-default-layout
 
 jekyll-mentions:
     base_url: https://github.com
