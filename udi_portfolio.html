@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udi Mosayev - Full Stack Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            color: #334155;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 4rem;
+            padding: 3rem 0;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(203, 213, 225, 0.3);
+            box-shadow: 0 10px 30px rgba(148, 163, 184, 0.1);
+        }
+
+        .name {
+            font-size: 3.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #a855f7 0%, #ec4899 50%, #f472b6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+
+        .linkedin-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #3b82f6;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            padding: 0.5rem 1rem;
+            border: 1px solid #b5c1fd;
+            border-radius: 8px;
+        }
+
+        .linkedin-link:hover {
+            background: #3b82f6;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 15px 40px rgba(92, 246, 115, 0.15);
+        }
+
+        .intro {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 2.5rem;
+            border-radius: 16px;
+            margin-bottom: 3rem;
+            border-left: 4px solid #10b981;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(148, 163, 184, 0.1);
+        }
+
+        .intro h2 {
+            background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+
+            background-size: 100%;
+            background-repeat: no-repeat;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-background-clip: text;
+            -moz-text-fill-color: transparent;
+            background-clip: text;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+
+        .intro p {
+            font-size: 1.1rem;
+            color: #475569;
+            line-height: 1.8;
+        }
+
+        .projects-section {
+            margin-top: 3rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+
+            background-size: 100%;
+            background-repeat: no-repeat;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-background-clip: text;
+            -moz-text-fill-color: transparent;
+            background-clip: text;
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, #0a8d62, #10b981);
+            margin: 1rem auto;
+            border-radius: 2px;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 16px;
+            padding: 2rem;
+            border: 1px solid rgba(203, 213, 225, 0.5);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(148, 163, 184, 0.1);
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            border-color: #45c298;
+            box-shadow: 0 15px 40px rgba(92, 246, 115, 0.15);
+        }
+
+        .project-title,
+        a {
+            font-size: 1.8rem;
+            color: #3b82f6;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+            ;
+        }
+
+        .wip-badge {
+            background: linear-gradient(90deg, #ff8496, #f472b6);
+            color: white;
+            padding: 0.2rem 0.6rem;
+            border-radius: 12px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .project-description {
+            color: #64748b;
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tech-tag {
+            background: linear-gradient(135deg, #a7f3d0, #86efac);
+            color: #065f46;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .project-image {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 1rem;
+            border: 1px solid rgba(203, 213, 225, 0.3);
+        }
+
+        .skills-highlight {
+            background: rgba(196, 181, 253, 0.1);
+            border: 1px solid rgba(181, 183, 253, 0.3);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            box-shadow: 0 4px 20px rgba(139, 92, 246, 0.08);
+        }
+
+        .skills-highlight h3 {
+            color: #55a6f7;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .name {
+                font-size: 2.5rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="name">Udi Mosayev</h1>
+            <a href="https://www.linkedin.com/in/udiudi/" class="linkedin-link" target="_blank">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+                LinkedIn Profile
+            </a>
+        </header>
+
+        <section class="intro">
+            <h2>About Me</h2>
+            <p>I've been coding since a young age and got to experience a variety of tech stacks and companies of
+                different sizes and cultures. I've worked as a contractor with local and remote companies, led the
+                technology front in several companies (some companies were acquired), and was an early employee in a few
+                startups where I created the infrastructure and workflows which the systems and the R&D department were
+                built upon, resolved scaling challenges (both technical and people) with a product and user happiness
+                mindset.</p>
+        </section>
+
+        <div class="skills-highlight">
+            <h3>Core Expertise</h3>
+            <p>Full-stack Development • System Architecture • Team Leadership • Strong Backend Orientation • Business
+                and Product Oriented Software Developer</p>
+        </div>
+
+        <section class="projects-section">
+            <h2 class="section-title">Latest Work</h2>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-title">
+                        BCON
+                        <span class="wip-badge">Work in Progress</span>
+                    </div>
+                    <div class="project-description">
+                        A service within WhatsApp that ensures your safety during travel or extreme activities. If you
+                        don't check in, your emergency contacts are notified with a configured escalation policy. Can
+                        also be used to monitor elder parents throughout the day without constant calling.
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">TypeScript</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-title"><a href="https://galia-lahav.com">Galia Lahav</a></div>
+                    <div class="project-description">
+                        Internal ERP system that runs the entire company operations including sales, manufacturing,
+                        finances and marketing. Integrated with Monday.com automations and various external tools
+                        through n8n and GitHub integrations.
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">Monday.com</span>
+                        <span class="tech-tag">n8n</span>
+                        <span class="tech-tag">GitHub</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-title"><a href="https://altius.capital">Altius</a></div>
+                    <div class="project-description">
+                        Portfolio management system designed for Family and Multi Family Offices, providing
+                        comprehensive financial oversight and management capabilities.
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">TypeScript</span>
+                    </div>
+                    <img src="altius.jpg" style="width: 500px; border-radius: 8px; margin-top: 12px;" />
+                </div>
+
+                <div class="project-card">
+                    <div class="project-title">DevLytics</div>
+                    <div class="project-description">
+                        A web application designed to gain insights into Git repositories, helping teams understand
+                        performance and codebase maintenance. Identified weak spots (bug-prone areas) and suggested code
+                        review and pair-programming for knowledge sharing and developer onboarding.
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Ruby on Rails</span>
+                        <span class="tech-tag">Svelte.js</span>
+                    </div>
+                    <img src="devlytics.jpg" style="width: 500px; border-radius: 8px; margin-top: 12px;" />
+                </div>
+
+                <div class="project-card">
+                    <div class="project-title"><a href="https://motioninformatics.ai">Motion Informatics</a></div>
+                    <div class="project-description">
+                        Medical devices company where I set up their entire tech workflows using Monday.com suite,
+                        including automations and integrations with external tools like GitHub, WordPress, and
+                        advertising platforms.
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Monday.com</span>
+                        <span class="tech-tag">GitHub</span>
+                        <span class="tech-tag">WordPress</span>
+                        <span class="tech-tag">Ad Platforms</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
