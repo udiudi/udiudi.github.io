@@ -60,6 +60,24 @@
             border-radius: 8px;
         }
 
+        .contact-section {
+            text-align: center;
+            margin: auto;
+        }
+
+        .contact-me-button {
+            display: inline-block;
+            margin-top: 3rem;
+            padding: 0.75rem 1.5rem;
+            background: linear-gradient(135deg, #f63b3b 0%, #fc8686 100%);
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.4rem;
+            box-shadow: 0 10px 30px rgba(16, 185, 129, 0.2);
+            transition: all 0.3s ease;
+        }
+
         .linkedin-link:hover {
             background: #3b82f6;
             color: white;
@@ -115,7 +133,7 @@
             background-clip: text;
             display: inline-block;
             width: 100%;
-            margin-bottom: 2rem;
+            margin-bottom: 0;
             text-align: center;
             position: relative;
         }
@@ -157,7 +175,6 @@
         a {
             font-size: 1.8rem;
             color: #3b82f6;
-            margin-bottom: 1rem;
             display: flex;
             align-items: center;
             gap: 0.5rem;
@@ -166,7 +183,7 @@
         }
 
         .wip-badge {
-            background: linear-gradient(90deg, #ff8496, #f472b6);
+            background: #f472b6;
             color: white;
             padding: 0.2rem 0.6rem;
             border-radius: 12px;
@@ -177,9 +194,9 @@
 
         .project-description {
             color: #64748b;
-            margin-bottom: 1.5rem;
             font-size: 1rem;
             line-height: 1.7;
+            min-height: 145px;
         }
 
         .tech-stack {
@@ -263,6 +280,12 @@
                 and Product Oriented Software Developer</p>
         </div>
 
+        <section class="contact-section">
+            <a href="mailto:udi@udi.codes" class="contact-me-button">
+                Get in Touch
+            </a>
+        </section>
+
         <section class="projects-section">
             <h2 class="section-title">Latest Work</h2>
 
@@ -270,12 +293,10 @@
                 <div class="project-card">
                     <div class="project-title">
                         BCON
-                        <span class="wip-badge">Work in Progress</span>
+                        <span class="wip-badge">WIP</span>
                     </div>
                     <div class="project-description">
-                        A service within WhatsApp that ensures your safety during travel or extreme activities. If you
-                        don't check in, your emergency contacts are notified with a configured escalation policy. Can
-                        also be used to monitor elder parents throughout the day without constant calling.
+                        Latest project, for periodic safety check-ins for travelers, elderlry, and outdoor adventurers.
                     </div>
                     <div class="tech-stack">
                         <span class="tech-tag">Next.js</span>
@@ -310,7 +331,7 @@
                         <span class="tech-tag">React.js</span>
                         <span class="tech-tag">TypeScript</span>
                     </div>
-                   
+
                 </div>
 
                 <div class="project-card">
@@ -324,25 +345,12 @@
                         <span class="tech-tag">Ruby on Rails</span>
                         <span class="tech-tag">Svelte.js</span>
                     </div>
-        
+
                 </div>
 
-                <div class="project-card">
-                    <div class="project-title"><a href="https://motioninformatics.ai">Motion Informatics</a></div>
-                    <div class="project-description">
-                        Medical devices company where I set up their entire tech workflows using Monday.com suite,
-                        including automations and integrations with external tools like GitHub, WordPress, and
-                        advertising platforms.
-                    </div>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Monday.com</span>
-                        <span class="tech-tag">GitHub</span>
-                        <span class="tech-tag">WordPress</span>
-                        <span class="tech-tag">Ad Platforms</span>
-                    </div>
-                </div>
             </div>
         </section>
+
     </div>
 </body>
 
